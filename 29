@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Functions</title>
+</head>
+<body>
+
+    <h1>JavaScript Array Functions</h1>
+
+    <p>Original array: [10, 20, 30, 40, 50]</p>
+    <p>Modified array: <span id="result"></span></p>
+
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+
+        // Add a number to the end of the array
+        numbers.push(60);
+
+        // Remove the first number
+        numbers.shift();
+
+        // Add a new number at the second position
+        numbers.splice(1, 0, 15);
+
+        // Display the modified array on the webpage
+        document.getElementById("result").textContent = 
+            "[" + numbers.join(", ") + "]";
+
+        // Display the modified array in the console
+        console.log(numbers);
+    </script>
+
+</body>
+</html>
